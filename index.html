@@ -2,6 +2,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
     <title>CSS Intro</title>
     <!-- Exercise 1: Add a link element with a href attribute that links your external css file to this document  -->
   </head>
@@ -10,36 +14,84 @@
     <header>
       <nav>
         <ul>
-          <li>
-            <a href="/">Home</a>
+          <li class="d-inline">
+            <a href="index.html" class="nav-link">Home</a>
           </li>
-          <li>
-            <a href="/about">About</a>
+          <span>|</span>
+          <li class="d-inline">
+            <a href="https://www.letsgommn.com/about" class="nav-link" target="_blank">About</a>
           </li>
-          <li>
-            <a href="/projects">Projects</a>
+          <span>|</span>
+          <li class="d-inline">
+            <a href="https://github.com/bdurushia?tab=repositories" class="nav-link" target="_blank">Projects</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h1>Main Heading</h1>
-        <img src="./images/example.png" alt="Author Headshot" />
-        <p>Author.. Bio...</p>
+      <section class="profile">
+        <h1 id="title">Sucker-Punched</h1>
+        <a href="https://www.letsgommn.com/blog/sucker-punched" target="_blank">
+          <img id="avatar" src="./images/IMG_20231221_233837_027.jpg" alt="Author Headshot" />
+        </a>
+        <p>Bryan Durushia -- ASP.NET Developer </p>
       </section>
       <article>
         <section>
-          <h2>Sub Heading</h2>
-          <p>Lorem ipsum...</p>
+          <h2>Countdown to Impact</h2>
+          <p>
+            I asked him a third time, <strong><em>“Sir, can you please take your earbuds out so that you are able to hear clearly and work with us?”</em></strong>
+          </p>
+          <p>
+            <strong><em>“Nah man, I ain't taken nothin' out.”</em></strong><br>
+            The young man finally muttered, staggering away from me, sticking behind the line of other laborers. 
+            I turned towards Peyton, a laborer from a company called 'Stage Works', and asked him,
+            <br><strong><em>“Can you go get Kim,”</em></strong> 
+            (the labor contractor)
+            <strong><em>“and have her remove him from the job site since he isn't willing to cooperate with us?”</em></strong><br>
+            Peyton nodded and started towards Kim. 
+            I backed away slightly, looking at the heavy dome-tarp we were working with, thinking about my next steps. The young man with the earbuds started toward me.
+          </p>
+          <p>
+            “What did you say?”, he said with a slightly clenched jaw.
+          </p>
+          <p>
+            <strong><em>“I said, 'if you can't take your earbuds out to work with us, I can't have you on my job site.’”</em></strong><br>
+            As I finished my sentence, I had turned my head to look at him and without any notice :<br><strong>WHAM!!!</strong><br>
+            My face was met by his fist. 
+            Vision goes black and with partial awareness of my body, I crumpled towards the ground. 
+            My vision came back by the time my rear-end hit the field turf. I sat there, dazed, wondering first why he felt it necessary to punch me over something so petty, 
+            and secondly why I still worked for a company that puts me in position with hot-headed temporary day laborers. 
+          </p>
         </section>
         <section>
-          <h2>Sub Heading</h2>
-          <p>Lorem ipsum...</p>
+          <h2>Dazed & Confused</h3>
+          <p>
+            I've often had to ask day laborers to remove their earbuds so they can hear me clearly as I call directions out to the group. 
+            I was basically in automated-work mode. Keeping a calm tone, with an agreeable reason, 
+            and the slightly calm threat of <strong><em>“if you can't then I can't.”</em></strong><br>Never would I have expected to get punched in the face for it. 
+          </p>
+          <p> I spat out bits of my teeth into the palm of my hand; also catching the falling blood from my face. 
+            Although the blow to my nose had my eyes watering, I may have slightly been crying. 
+            I've been wanting out of this day job life for quite some time. My progress has been slow. 
+            Why would someone be so angry, to punch a calm person in the face? 
+            What type of life does this young man lead where he can't take his earphones out while at work 
+            and is willing to act with violence to anyone who requests his ears to be open? 
+            Why are humans aggressive? Who am I and what am I doing here?
+          </p>
           <div>
-            <h3>Another Sub Heading</h3>
-            <p>Lorem ipsum...</p>
+            <h2>Accepting the Unexpected</h3>
+            <h3 id="quote">
+              <em>“To expect the unexpected shows thoroughly modern intellect.”</em> - Oscar Wilde
+            </h3>
+            <p>
+              The meaning of the quote, to expect the unexpected, essentially is to be ready for anything and be able to adapt to change. 
+              It's a rather funny phrase to me, though, because even when you think you are expecting the unexpected, 
+              a wild card is played and something will go more wrong than you've prepared yourself for. 
+              To me, expecting the unexpected is keeping in the present moment and building the ability to adapt to sudden changes. 
+              Even when your vision goes black, if you've got your thoughts running you can analyze the situation and quickly make the best next decision.
+            </p>
           </div>
         </section>
       </article>
@@ -48,16 +100,17 @@
     <footer>
       <nav>
         <ul>
-          <li>
-            <a href="/privacy">Privacy Policy</a>
+          <li class="d-inline">
+            <a href="/privacy" class="nav-link">Privacy Policy</a>
           </li>
-          <li>
-            <a href="/terms">Terms and Conditions</a>
+          <span>|</span>
+          <li class="d-inline">
+            <a href="/terms" class="nav-link">Terms and Conditions</a>
           </li>
         </ul>
       </nav>
 
-      <div>
+      <div class="credits">
         <p>Powered by 🕯️</p>
         <p>&copy; TrueCoders 2021-24</p>
       </div>
