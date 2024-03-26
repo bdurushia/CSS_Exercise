@@ -1,3 +1,5 @@
+https://bdurushia.github.io/CSS_Exercise/
+
 ---
 title: "Exercise: CSS Intro"
 slug: "/css-intro-exercise"
